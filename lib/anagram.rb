@@ -10,14 +10,12 @@ class String
     good_input2 = ""
     antigram = ""
 
-
     word2_array.each() do |letter|
       if word1_array.include?(letter)
         compare_word2.push(letter)
       else new_array.push(letter)
       end
     end
-
 
     word1_array.each() do |letter|
       if new_array.include?(letter)
@@ -36,17 +34,15 @@ class String
       end
     end
 
-  
-
-      if (good_input == false)
-        bad_answer = "please enter an actual word"
-      elsif antigram == true
-        antigram_answer = "these words have no letter matches and are antigrams"
-      elsif (compare_word2.length == word1_array.length && word2_array.reverse != word1_array)
-        anagram_answer = "this is an anagram"
-      elsif word2_array.reverse == word1_array
-        palindrome_answer = "this is a palindrome"
-      end
+    if (good_input == false)
+      bad_answer = "please enter an actual word"
+    elsif antigram == true
+      antigram_answer = "these words have no letter matches and are antigrams"
+    elsif (compare_word2.length == word1_array.length && word2_array.reverse != word1_array)
+      anagram_answer = "this is an anagram"
+    elsif word2_array.reverse == word1_array
+      palindrome_answer = "this is a palindrome"
+    end
 
   end
 end
