@@ -1,5 +1,5 @@
 require('rspec')
-require('') #requires lib file that is .rb
+require('anagram') #requires lib file that is .rb
 
 describe() do
   it(" ") do #doesnt matter english explination
