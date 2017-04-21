@@ -10,4 +10,8 @@ describe() do
     expect("".anagram("Canoe","oCean")).to(eq("this is an anagram"))
   end
 
+  it("will check to see if two words are also palindromes regardeless of case") do
+    expect("".anagram("hannah","hannah")).to(eq("this is a palindrome"))
+  end
+
 end
