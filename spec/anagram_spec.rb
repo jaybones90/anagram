@@ -22,4 +22,8 @@ describe() do
     expect("".anagram("stop","hey")).to(eq("these words have no letter matches and are antigrams"))
   end
 
+  it("will check to see if multiple words are anagrams or antigrams") do
+    expect("".anagram("hey is this in anagram or an antigram")).to(eq("not sure how this would look"))
+  end
+
 end
