@@ -15,7 +15,11 @@ describe() do
   end
 
   it("will check to see if both words include vowels") do
-    expect("".anagram("lptr","lptr")).to(eq("please enter an actual word"))
+    expect("".anagram("fdt","lptr")).to(eq("please enter an actual word"))
+  end
+
+  it("will check to see if both words are antigrams") do
+    expect("".anagram("stop","hey")).to(eq("these words have no letter matches and are antigrams"))
   end
 
 end
