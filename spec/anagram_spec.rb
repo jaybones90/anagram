@@ -2,8 +2,8 @@ require('rspec')
 require('anagram') #requires lib file that is .rb
 
 describe() do
-  it(" ") do #doesnt matter english explination
-    expect((self).method()).to(eq())
+  it("will check to see if two words are anagrams") do #doesnt matter english explination
+    expect("".anagram("ruby","bury")).to(eq("this is an anagram"))
 
   end
 end
