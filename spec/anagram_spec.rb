@@ -14,4 +14,8 @@ describe() do
     expect("".anagram("hannah","hannah")).to(eq("this is a palindrome"))
   end
 
+  it("will check to see if both words include vowels") do
+    expect("".anagram("lptr","lptr")).to(eq("please enter an actual word"))
+  end
+
 end
