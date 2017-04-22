@@ -1,6 +1,8 @@
 require('pry')
 class String
   define_method(:anagram) do |word1,word2|
+
+    
     word1_array = word1.upcase.split("")
     word2_array = word2.upcase.split("")
     compare_word2 = []
